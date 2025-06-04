@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background: radial-gradient(
+  circle at 75% 55%,
+ rgb(78, 73, 6) 10%,   
+  hsl(49, 84%, 15%) 30%,
+  rgb(48, 40, 3) 60%
+);  */
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 15px;
+}
+
+img {
+  display: block;
+  margin-bottom: 40px;
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+}
+
+h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 28px;
+  margin: 10px 0;
+  font-weight: 300;
+}
+h4 {
+    font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: 200;
+   text-align: left;  
+   width: 300px;   
+   
+
+}
+
+.login-input {
+  padding: 12px 35px;
+  width: 230px;
+  background:none;
+ border: 1px solid #e7e6e0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+button {
+
+  color: black;
+  padding: 12px 35px;
+  border: none;
+  background-color: white;
+  font-weight:400;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 300px;
+  border-radius: 3px;
+  font-size: larger;
+}
+
+.forgot {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: -5px 0 5px 0;
+  cursor: pointer;
+}
+
+.register-link {
+  color: white;
+  text-decoration: none;
+}
+.wrapper {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 480px) {
+  .login-container {
+    padding: 0 20px;
+    gap: 12px;
+  }
+
+  img {
+    width: 120px;
+    margin-bottom: 25px;
+  }
+
+  h2, h4 {
+    font-size: 20px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .login-input,
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .forgot {
+    font-size: 14px;
+    text-align: right;
+    width: 100%;
+  }
+}
+
+

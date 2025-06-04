@@ -1,0 +1,17 @@
+#root {
+background: radial-gradient(
+  circle at 75% 55%,
+ rgb(78, 73, 6) 10%,   
+  hsl(49, 84%, 15%) 30%,
+  rgb(48, 40, 3) 60%
+); 
+}
+/*
+    #root {
+background: radial-gradient(
+  circle at 100% 50%,
+ rgb(62, 59, 4) 10%,
+    rgb(48, 40, 4) 50%,
+  rgb(37, 30, 2) 70%,
+  rgb(28, 23, 1) 90%
+); */

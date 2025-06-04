@@ -1,0 +1,64 @@
+.profile-container {
+  background: linear-gradient(to bottom, #000000, #1a1a1a);
+  color: white;
+  margin: 0 auto;
+}
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  padding: 20px;
+}
+.profile-picture {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid gold;
+  object-fit: cover;
+  
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-size: 1.4em;
+  margin: 0;
+  font-weight: bold;
+}
+
+.profile-role,
+.profile-location {
+  margin: 3px 0;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.profile-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.tab {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+
+  padding: 30px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.tab:hover,
+.tab.active {
+  border-bottom: 2px solid gold;
+  color: gold;
+}
