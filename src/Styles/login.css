@@ -61,18 +61,14 @@ h4 {
 }
 
 button {
-
-  color: black;
   padding: 12px 35px;
-  border: none;
-  background-color: white;
-  font-weight:400;
-  cursor: pointer;
-  margin-top: 10px;
-   width: 100%;
+  width: 100%;
  box-sizing: border-box;
+  background:white;
+ border: 1px solid #e7e6e0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   border-radius: 3px;
-  font-size: larger;
 }
 
 .forgot {
@@ -111,10 +107,16 @@ button {
     width: 100px;
   }
 
-  h2, h4 {
+  h4 {
      width: 100%;
     font-size: 22px;
     text-align: left;
+   
+  }
+  h2{
+      width: 100%;
+    font-size: 22px;
+    text-align: center;
   }
 
   .login-input,
@@ -126,7 +128,7 @@ button {
 
   .forgot {
     font-size: 14px;
-    text-align: right;
+    text-align: center;
     width: 100%;
   }
 }
