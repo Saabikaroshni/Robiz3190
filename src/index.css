@@ -1,9 +1,8 @@
 #root {
 background: radial-gradient(
-  circle at 75% 55%,
- rgb(78, 73, 6) 10%,   
-  hsl(49, 84%, 15%) 30%,
-  rgb(48, 40, 3) 60%
+  circle at 85% 50%,
+ rgb(57, 50, 1) 5%,   
+   rgb(0, 0, 0) 70%
 ); 
 }
 /*

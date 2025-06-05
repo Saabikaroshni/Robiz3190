@@ -51,10 +51,11 @@ h4 {
 
 .login-input {
   padding: 12px 35px;
+  color: white;
   width: 100%;
  box-sizing: border-box;
   background:none;
- border: 1px solid #e7e6e0;
+ border: 1px solid #48442d;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   border-radius: 3px;
@@ -65,7 +66,7 @@ button {
   width: 100%;
  box-sizing: border-box;
   background:white;
- border: 1px solid #e7e6e0;
+margin-top: 30px;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   border-radius: 3px;
@@ -94,6 +95,29 @@ button {
   justify-content: center;
   height: 100vh;
 }
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper .login-input {
+  width: 100%;
+  padding-right: 60px; 
+  padding: 10px;
+}
+
+.toggle-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
 
 @media screen and (max-width: 480px) {
   .login-container {
