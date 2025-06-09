@@ -12,17 +12,17 @@ function App() {
   return (
   
     <BrowserRouter>
-      <Login></Login>
-      {/* <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/login" element={<Login />} />
+     
+      <Routes>
+        <Route path="/main" element={<Main />} />
+        <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />}>
           <Route index element={<About />} />
           <Route path="business" element={<Business />} />
           <Route path="rotary" element={<Rotary />} />
         </Route>
-      </Routes> */}
+      </Routes>
     </BrowserRouter>
   );
 }

@@ -13,7 +13,7 @@ function Login() {
         <h4>Password</h4>
         <input type="password" className="login-input" />
         <p className="forgot">Forgot Password?</p>
-        <button>LOG IN</button>
+        <Link to="/main"><button>LOG IN</button></Link>
         {/* <p>Don't have an account? <Link to="/register" className="register-link">REGISTER</Link></p> */}
       </div>
     </div>
