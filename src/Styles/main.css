@@ -19,10 +19,11 @@ h1{
 }
 
 .buttons {
-  margin: 20px;
+  /* margin: 20px; */
   display: flex; 
   flex-direction: row;
   gap: 300px;  
+  margin-bottom: 20px;
   
 }
 @media (max-width:768px){
@@ -36,6 +37,21 @@ h1{
   }
   img{
     width: 200px;
+  }
+
+}
+@media (max-width:468px){
+  .buttons{
+    flex-direction: column;
+    gap: 10px;
+    width: 170px;
+    font-size: small;
+  }
+  h1{
+    font-size: 35px;
+  }
+  img{
+    width: 150px;
   }
 
 }
