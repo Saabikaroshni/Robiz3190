@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 90px;
+  padding-right: 90px;
+  background-color:  none;
+  height: 50px;
+  
+}
+
+.navbar-left .logo {
+  height: 30px;
+  width: auto;
+  margin: 10px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top:40px;
+
+  border: 2px solid #ccc;
+}
+
+h5{
+  font-size: 15px;
+  font-weight: 100;
+  color:whitesmoke;
+}

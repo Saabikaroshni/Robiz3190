@@ -12,6 +12,9 @@ body {
 );  */
   font-family: 'Roboto', sans-serif;
 }
+a{
+  text-decoration: none;
+}
 
 .login-container {
    width: 100%; 
@@ -20,6 +23,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: none;
   color: white;
   gap: 15px;
 }
@@ -27,9 +31,16 @@ body {
 img {
   display: block;
   margin-bottom: 40px;
+  
   width: 160px;
   height: auto;
   object-fit: contain;
+}
+h1{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 30px;
+  margin: 10px 0;
+  font-weight: 300;
 }
 
 h2 {
@@ -61,25 +72,31 @@ h4 {
   border-radius: 3px;
 }
 
-button {
+.button{
   padding: 12px 35px;
+  color:black;
   width: 100%;
  box-sizing: border-box;
   background:white;
-margin-top: 30px;
+ 
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   border-radius: 3px;
+  text-decoration: none;
+  margin-bottom: 100px;
 }
 
-.forgot {
+p {
   font-size: 16px;
   font-weight: 500;
   color: white;
   font-family: 'Roboto', sans-serif;
   margin: -5px 0 5px 0;
   cursor: pointer;
+
+ 
 }
+
 
 .register-link {
   color: white;
@@ -130,6 +147,7 @@ margin-top: 30px;
     margin-bottom: 20px;
     width: 200px;
   }
+ 
 
   h4 {
      width: 100%;
@@ -147,21 +165,44 @@ margin-top: 30px;
    width: 100%;
     padding: 12px;
     font-size: 14px;
+    color: white;
+ 
     
 
 }
-  button {
-    width: 100%;
-    padding: 10px;
+  .button {
+  width: 100%;
+    padding: 12px;
     font-size: 14px;
+    color: rgb(8, 0, 0);
+    background: white;
+ 
   }
 
-  .forgot {
+  p {
     font-size: 14px;
     text-align: center;
     width: 100%;
     padding: 10px;
+    
   }
+  
+}
+.input-error {
+  border: 1px solid red;
 }
 
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin: 6px 0 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+}
+
+.error-icon {
+  font-size: 16px;
+}
 

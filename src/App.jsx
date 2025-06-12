@@ -1,11 +1,12 @@
 import React from 'react'
 import Login from './Pages/Login'
+import Recovery from './Pages/Recovery'
 import Main from './Pages/Main'
+import Navbar from './Pages/Navbar'
 import Register from './Pages/Register'
 import Profile from './Pages/Profile'
 import About from './Pages/About'
-import Business from './Pages/Business'
-import Rotary from './Pages/Rotary'
+import BoostProfile from './Pages/BoostProfile'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 function App() {
@@ -16,12 +17,14 @@ function App() {
       <Routes>
         <Route path="/main" element={<Main />} />
         <Route path="/" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/profile" element={<Profile />}>
-          <Route index element={<About />} />
-          <Route path="business" element={<Business />} />
-          <Route path="rotary" element={<Rotary />} />
-        </Route>
+        <Route path="/recovery" element={<Recovery/>}></Route>
+        <Route path=""></Route>
+        <Route path="/boostprofile" element={<BoostProfile/>}></Route>
+        <Route path="navbar" element={<Navbar/>}></Route>
+      
+         
+          
+        
       </Routes>
     </BrowserRouter>
   );

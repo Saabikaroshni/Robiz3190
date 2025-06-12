@@ -5,9 +5,9 @@ function Home() {
      <div className="home-container">
       <img src="/logo2.png" alt="Company Logo" />
       <h1>Welcome  Allen</h1>
-      <div className="buttons">
-        <Link to="#"><button>BOOST PROFILE</button></Link>
-        <Link to="#"><button>ADD BANNER</button></Link>
+      <div>
+        <Link to="/boostprofile"><button className='buttons'>BOOST PROFILE</button></Link>
+        <Link to="#"><button className='buttons'>ADD BANNER</button></Link>
       </div>
     </div>
   );
