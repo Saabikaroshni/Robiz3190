@@ -186,6 +186,11 @@ p {
     padding: 10px;
     
   }
+  .error-message {
+    justify-content: center; 
+    text-align: center;
+    width: 100%;
+  }
   
 }
 .input-error {
