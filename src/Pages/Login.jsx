@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../Styles/login.css';
 import { Link } from 'react-router-dom';
 
@@ -7,7 +8,7 @@ function Login() {
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState({ email: false, password: false });
   const [showError, setShowError] = useState(false);
-
+  const navigate = useNavigate();
   const validate = () => {
     const isEmail = mobileEmail.includes('@') && mobileEmail.includes('.com');
     const isNumber = /^[1-9][0-9]{9}$/.test(mobileEmail);
@@ -24,9 +25,9 @@ function Login() {
     return !hasError;
   };
 
-  const handleLoginClick = (e) => {
-    if (!validate()) {
-      e.preventDefault(); 
+  const handleLoginClick = () => {
+    if (validate()) {
+      navigate('/main');
     }
   };
 
@@ -61,9 +62,9 @@ function Login() {
 
         <Link to="/recovery"><p>Forgot Password?</p></Link>
         
-       <button className="button" onClick={handleLoginClick}>
-        <Link to="/main" className="button">LOG IN</Link>
-      </button>
+   <button className="button" onClick={handleLoginClick}>
+          LOG IN
+        </button>
 
       </div>
     </div>
