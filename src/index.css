@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Roboto&display=swap');
 #root {
 background: radial-gradient(
   circle at 85% 50%,
@@ -7,5 +8,12 @@ background: radial-gradient(
 }
 a {
   text-decoration: none;
+}
+*{
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+}
+body{
+  font-family: 'Roboto', sans-serif;
 }
 
