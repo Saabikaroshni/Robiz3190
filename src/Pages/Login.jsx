@@ -35,9 +35,9 @@ function Login() {
     <div className="wrapper">
       <div className="login-container">
         <img src="/logo2.png" alt="Company Logo" />
-        <h2>Log In</h2>
+        <h3>Log In</h3>
 
-        <h4>Mobile Number / Email</h4>
+        <h4>Mobile Number</h4>
         <input
           type="text"
           className={`login-input ${errors.email ? 'input-error' : ''}`}
@@ -62,7 +62,7 @@ function Login() {
 
         <Link to="/recovery"><p>Forgot Password?</p></Link>
         
-   <button className="button" onClick={handleLoginClick}>
+   <button  onClick={handleLoginClick}>
           LOG IN
         </button>
 

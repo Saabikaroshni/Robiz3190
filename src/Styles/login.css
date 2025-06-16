@@ -1,213 +1,159 @@
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Roboto&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  /* background: radial-gradient(
-  circle at 75% 55%,
- rgb(78, 73, 6) 10%,   
-  hsl(49, 84%, 15%) 30%,
-  rgb(48, 40, 3) 60%
-);  */
   font-family: 'Roboto', sans-serif;
+  background-color: #1e1e1e; /* fallback color */
+  color: white;
 }
-a{
+
+a {
   text-decoration: none;
+  color: white;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  padding: 16px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-container {
-   width: 100%; 
-  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: none;
-  color: white;
-  gap: 15px;
+  gap: 16px;
 }
 
 img {
-  display: block;
-  margin-bottom: 40px;
-  
-  width: 160px;
+  width: 150px;
   height: auto;
+  margin-bottom: 24px;
   object-fit: contain;
 }
-h1{
-  font-family: 'DM Sans', sans-serif;
-  font-size: 30px;
-  margin: 10px 0;
-  font-weight: 300;
-}
 
-h2 {
+h3{
   font-family: 'DM Sans', sans-serif;
   font-size: 28px;
-  margin: 10px 0;
-  font-weight: 300;
-}
-h4 {
-    font-family: 'DM Sans', sans-serif;
- font-family: 'DM Sans', sans-serif;
-  font-size: 16px;
-  margin: 6px 0 2px 0;
-  font-weight: 400;
+  font-weight: 100;
+  margin: 0;
   width: 100%;
   text-align: left;
+}
 
+h4 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  margin: 4px 0;
+  width: 100%;
+  text-align: left;
 }
 
 .login-input {
-  padding: 12px 35px;
-  color: white;
   width: 100%;
- box-sizing: border-box;
-  background:none;
- border: 1px solid #48442d;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  border-radius: 3px;
-}
-
-.button{
-  padding: 12px 35px;
-  color:black;
-  width: 100%;
- box-sizing: border-box;
-  background:white;
- 
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  border-radius: 3px;
-  text-decoration: none;
-  margin-bottom: 100px;
-}
-
-p {
-  font-size: 16px;
-  font-weight: 500;
+  padding: 12px;
+  font-size: 15px;
+  background: none;
+  border: 1px solid #48442d;
+  border-radius: 4px;
   color: white;
-  font-family: 'Roboto', sans-serif;
-  margin: -5px 0 5px 0;
-  cursor: pointer;
-
- 
+  box-sizing: border-box;
 }
 
+.input-error {
+  border-color: red;
+}
 
-.register-link {
-  color: white;
-  text-decoration: none;
-}
-.wrapper {
-  width: 100%;
-  max-width: 360px;
-  margin: 0 auto;
-  padding: 0 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
 .password-wrapper {
   position: relative;
   width: 100%;
 }
 
-.password-wrapper .login-input {
-  width: 100%;
-  padding-right: 60px; 
-  padding: 10px;
-}
-
-.toggle-button {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  color: #007bff;
-  cursor: pointer;
-  font-size: 0.9rem;
-}
-
-
-@media screen and (max-width: 480px) {
-  .login-container {
-    padding: 0 20px;
-    gap: 12px;
-  }
-
-    img {
-    align-self: center;
-    margin-bottom: 20px;
-    width: 200px;
-  }
- 
-
-  h4 {
-     width: 100%;
-    font-size: 18px;
-    text-align: left;
-   
-  }
-  h2{
-      width: 100%;
-    font-size: 30px;
-    text-align: center;
-  }
-
-.login-input{
-   width: 100%;
-    padding: 12px;
-    font-size: 14px;
-    color: white;
- 
-    
-
-}
-  .button {
-  width: 100%;
-    padding: 12px;
-    font-size: 14px;
-    color: rgb(8, 0, 0);
-    background: white;
- 
-  }
-
-  p {
-    font-size: 14px;
-    text-align: center;
-    width: 100%;
-    padding: 10px;
-    
-  }
-  .error-message {
-    justify-content: center; 
-    text-align: center;
-    width: 100%;
-  }
-  
-}
-.input-error {
-  border: 1px solid red;
-}
-
 .error-message {
-  color: red;
-  font-size: 14px;
-  margin: 6px 0 4px;
   display: flex;
   align-items: center;
-  gap: 5px;
-  font-weight: 500;
+  justify-content: center;
+  gap: 8px;
+  color: red;
+  font-size: 14px;
+  margin: 4px 0;
+  width: 100%;
+  text-align: center;
 }
 
 .error-icon {
   font-size: 16px;
 }
 
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.register-link {
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding: 12px;
+  }
+
+  .login-container {
+    gap: 14px;
+  }
+
+  img {
+    width: 130px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  .login-input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .error-message {
+    font-size: 13px;
+    justify-content: center;
+    text-align: center;
+  }
+}
