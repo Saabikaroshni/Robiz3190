@@ -1,169 +1,11 @@
-/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Roboto&display=swap');
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #1e1e1e; 
-  color: white;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-.wrapper {
-  width: 100%;
-  max-width: 380px;
-  margin: 0 auto;
-  padding: 16px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.login-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-img {
-  width: 150px;
-  height: auto;
-  margin-bottom: 24px;
-  object-fit: contain;
-}
-
-h3{
-  font-family: 'DM Sans', sans-serif;
-  font-size: 28px;
-  font-weight: 100;
-  margin: 0;
-  width: 100%;
-  text-align: left;
-}
-
-h4 {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 100;
-  font-size: 16px;
-  margin: 4px 0;
-  width: 100%;
-  text-align: left;
-}
-
-.login-input {
-  width: 100%;
-  padding: 12px;
-  font-size: 15px;
-  background: none;
-  border: 1px solid #48442d;
-  border-radius: 4px;
-  color: white;
-  box-sizing: border-box;
-}
-
-.input-error {
-  border-color: red;
-}
-
-.password-wrapper {
-  position: relative;
-  width: 100%;
-}
-
-.error-message {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  color: red;
-  font-size: 14px;
-  margin: 4px 0;
-  width: 100%;
-  text-align: center;
-}
-
-.error-icon {
-  font-size: 16px;
-}
-
-button {
-  width: 100%;
-  padding: 12px;
-  background-color: white;
-  color: black;
-  font-size: 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: 'Roboto', sans-serif;
-}
-
-p {
-  font-size: 14px;
-  margin: 0;
-  text-align: center;
-  cursor: pointer;
-}
-
-.register-link {
-  color: white;
-}
-
-@media screen and (max-width: 480px) {
-  .wrapper {
-    padding: 12px;
-  }
-
-  .login-container {
-    gap: 14px;
-  }
-
-  img {
-    width: 130px;
-    margin-bottom: 20px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h4 {
-    font-size: 15px;
-  }
-
-  .login-input {
-    font-size: 14px;
-  }
-
-  button {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  p {
-    font-size: 13px;
-  }
-
-  .error-message {
-    font-size: 13px;
-    justify-content: center;
-    text-align: center;
-  }
-} */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Roboto&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #1e1e1e; /* fallback color */
+  background-color: #1e1e1e; 
   color: white;
   
 }
@@ -174,8 +16,8 @@ a {
 }
 
 .wrapper {
-  width: 100%;
-  max-width: 380px;
+  width: 100vw;
+  max-width: none;
   margin: 0 auto;
   padding: 16px;
   height: 100vh;
@@ -186,18 +28,20 @@ a {
 
 .login-container {
   width: 100%;
+  max-width: 360px; 
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: stretch; /* Makes children align left properly */
+  align-items: stretch;
   gap: 16px;
   margin-top: 40px;
-  padding: 60px;
+  
 }
 
 img {
   width: 150px;
   height: auto;
-  margin: 0 auto 24px auto; /* Center the logo */
+  margin: 0 auto 24px auto; 
   object-fit: contain;
   display: block;
 }
@@ -288,10 +132,10 @@ p {
   color: white;
 }
 
-/* ---------- Mobile Responsive Adjustments ---------- */
+
 @media screen and (max-width: 480px) {
   .wrapper {
-    padding: 12px;
+    padding: 16px 20px;
     align-items: flex-start;
   }
 
@@ -301,8 +145,8 @@ p {
   }
 
   img {
-    width: 130px;
-    margin: 0 auto 20px auto;
+    width: 120px;
+    margin: 0 auto 16px auto;
   }
 
   h2 {
