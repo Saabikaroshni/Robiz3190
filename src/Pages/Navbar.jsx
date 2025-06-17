@@ -4,9 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const location = useLocation();
-  if (location.pathname === "/" || location.pathname === "/main" || location.pathname === "/recovery") {
-    return null;
-  }
+  
   return (
     <nav className="navbar">
       <div className="navbar-left">

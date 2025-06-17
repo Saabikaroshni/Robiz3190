@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+// import { signInWithEmailAndPassword } from 'firebase/auth';
+// import { auth } from '../firebase';
 import { useNavigate } from 'react-router-dom';
 import '../Styles/login.css';
 import { Link } from 'react-router-dom';
@@ -27,7 +29,7 @@ function Login() {
 
   const handleLoginClick = () => {
     if (validate()) {
-      navigate('/main');
+      navigate('/home');
     }
   };
 
@@ -37,7 +39,7 @@ function Login() {
         <img src="/logo2.png" alt="Company Logo" />
         <h3>Log In</h3>
 
-        <h4>Mobile Number</h4>
+        <h4>Email ID</h4>
         <input
           type="text"
           className={`login-input ${errors.email ? 'input-error' : ''}`}

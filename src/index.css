@@ -1,21 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Roboto&display=swap');
-#root {
-background: radial-gradient(
-  circle at 85% 50%,
- rgb(57, 50, 1) 5%,   
-   rgb(0, 0, 0) 70%
-); 
-}
-a {
-  text-decoration: none;
-}
 *{
-    color: white;
-    font-family: 'DM Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
     
 }
-body{
-  font-family: 'Roboto', sans-serif;
- 
-}
+
+
+
 

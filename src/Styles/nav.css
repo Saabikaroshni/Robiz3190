@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  
+  justify-content: space-around;
+  align-items: left;
+  padding:10px;
+  background: yellow;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.profile-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.welcome-text {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+
+
+

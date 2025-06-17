@@ -1,51 +1,57 @@
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-left: 30px;
-  margin-right: 30px;
-  background-color:  none;
+  padding: 10px;
+  padding-top: 0px;
+  background-color:none;
   height: 6vh;
   
 }
-
-.navbar-left .logo {
+.navbar-left{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px; 
+  background-color:none;
+}
+.logo{
   height: 30px;
   width: auto;
   margin: 10px;
-}
-
-.navbar-right {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.profile-pic {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  background-color:none;
+ 
   object-fit: cover;
-  margin-top:40px;
-
-  border: 2px solid #ccc;
+}
+.navbar-left .profile {
+  height: 30px;
+  width: auto;
+  margin: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+ 
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color:none;
 }
 
-h5{
-  font-size: 15px;
-  font-weight: 100;
-  color:whitesmoke;
+.navbar-left .text{
+    /* padding: 15px;
+    padding-left: 0px; */
+    background-color: none;
 }
+
 @media(max-width:800px){
 
 }
 @media(max-width:468px){
  
-  .profile-pic {
  
-  margin-top:20px;
-
-  
-}
 
 }
