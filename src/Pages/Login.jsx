@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-// import { signInWithEmailAndPassword } from 'firebase/auth';
-// import { auth } from '../firebase';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebase';
 import { useNavigate } from 'react-router-dom';
 import '../Styles/login.css';
 import { Link } from 'react-router-dom';
@@ -11,6 +11,7 @@ function Login() {
   const [errors, setErrors] = useState({ email: false, password: false });
   const [showError, setShowError] = useState(false);
   const navigate = useNavigate();
+
   const validate = () => {
     const isEmail = mobileEmail.includes('@') && mobileEmail.includes('.com');
     const isNumber = /^[1-9][0-9]{9}$/.test(mobileEmail);
@@ -20,16 +21,26 @@ function Login() {
     const hasError = !(isValid && isPasswordValid);
     setErrors({
       email: !isValid,
-      password: !isPasswordValid
+      password: !isPasswordValid,
     });
-    setShowError(hasError); 
-
+    setShowError(false); // hide error on fresh submit
     return !hasError;
   };
 
-  const handleLoginClick = () => {
+  const handleLoginClick = async () => {
     if (validate()) {
-      navigate('/home');
+      const isEmail = mobileEmail.includes('@');
+      if (isEmail) {
+        try {
+          await signInWithEmailAndPassword(auth, mobileEmail, password);
+          navigate('/home');
+        } catch (error) {
+          setShowError(true); // show "Invalid credentials"
+        }
+      } else {
+        // Mobile number login isn't supported by Firebase without OTP
+        setShowError(true);
+      }
     }
   };
 
@@ -56,6 +67,7 @@ function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
+
         {showError && (
           <p className="error-message">
             <span className="error-icon">⚠</span> Invalid Credentials
@@ -63,13 +75,13 @@ function Login() {
         )}
 
         <Link to="/recovery"><p>Forgot Password?</p></Link>
-        
-   <button  onClick={handleLoginClick}>
+
+        <button onClick={handleLoginClick}>
           LOG IN
         </button>
-
       </div>
     </div>
   );
 }
+
 export default Login;
