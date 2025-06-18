@@ -4,6 +4,7 @@
 
     font-family: 'Roboto', sans-serif;
     color: white;
+    
 }
 /*
 a {
@@ -65,9 +66,12 @@ h2{
 /* home.css */
 
 .home-container {
-  padding: 20px;
+
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
   text-align: center;
-  background-color:none;
+  background-color:red;
   color: white;
   gap: 30px;
 
@@ -81,12 +85,12 @@ h2{
   display: flex;
   height: 200px;
   flex-wrap: wrap;
-  max-width: 100%;
+  max-width:100%;
   width: 90%;
   background-color:none;
   padding: 15px;
   border-radius: 12px;
-  /* box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1); */
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
 }
 .home-menu{
   

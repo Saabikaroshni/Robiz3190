@@ -50,18 +50,22 @@ const Home = () => {
   return (
     <div className="home-container">
       {banner ? (
-        <div className="banner-box">
+        
           <img
             src={banner.imageUrl}
             alt={banner.title}
             className="banner-image"
           />
           
-        </div>
+        
       ) : (
         <p className="loading-text">Loading banner...</p>
       )}
-      <div className="banner-box"></div>
+
+      <div className="banner-box">
+         {/* add imges here */}
+      </div>
+
       <div className='home-menu'>
           <div className='home-btn' >
             <img src="/boost.png" alt="" className='home-logo'/>
