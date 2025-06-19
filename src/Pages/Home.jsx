@@ -25,6 +25,7 @@ import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import '../Styles/home.css';
 import Nav from './Nav';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [mainBanner, setMainBanner] = useState(null);

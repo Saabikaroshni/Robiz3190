@@ -3,15 +3,18 @@
   flex-wrap: wrap;
   justify-content: space-between;
   background-color:none;
-  height: 10vh;
+  height: 12vh;
   width: 100%;
+  
   
 }
 .navbar-left{
   display: flex;
   flex-wrap: wrap;
-  padding: 10px; 
+  justify-content: center;
+  align-items: center;
   background-color:none;
+  margin-right: 10px;
 }
 .logo{
   height: 60px;
