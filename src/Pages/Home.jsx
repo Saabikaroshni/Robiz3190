@@ -24,6 +24,7 @@ import React, { useEffect, useState } from 'react';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import '../Styles/home.css';
+import Nav from './Nav';
 
 const Home = () => {
   const [mainBanner, setMainBanner] = useState(null);
@@ -70,7 +71,9 @@ const Home = () => {
   };
 
   return (
+  
     <div className="home-container">
+      
       <div className='banner-box'>
         {mainBanner ? (
           <img
