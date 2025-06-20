@@ -1,0 +1,21 @@
+.splash-screen {
+  display: flex;
+ 
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: none; /* optional: dark background */
+}
+
+.splash-logo {
+  width: 150px;
+  height: auto;
+  animation: fadeInOut 5s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}

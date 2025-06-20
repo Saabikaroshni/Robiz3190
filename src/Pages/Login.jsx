@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import '../Styles/login.css';
-import { Link } from 'react-router-dom';
 
 function Login() {
   const [mobileEmail, setMobileEmail] = useState('');
@@ -23,7 +22,7 @@ function Login() {
       email: !isValid,
       password: !isPasswordValid,
     });
-    setShowError(false); // hide error on fresh submit
+    setShowError(false);
     return !hasError;
   };
 
@@ -33,12 +32,12 @@ function Login() {
       if (isEmail) {
         try {
           await signInWithEmailAndPassword(auth, mobileEmail, password);
-          navigate('/home');
+          navigate('/'); // ✅ Redirect to main (home) route
         } catch (error) {
-          setShowError(true); // show "Invalid credentials"
+          setShowError(true);
         }
       } else {
-        // Mobile number login isn't supported by Firebase without OTP
+        // Mobile number login not implemented
         setShowError(true);
       }
     }
@@ -76,9 +75,7 @@ function Login() {
 
         <Link to="/recovery"><p>Forgot Password?</p></Link>
 
-        <button onClick={handleLoginClick}>
-          LOG IN
-        </button>
+        <button onClick={handleLoginClick}>LOG IN</button>
       </div>
     </div>
   );

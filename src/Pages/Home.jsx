@@ -74,7 +74,7 @@ const Home = () => {
   return (
   
     <div className="home-container">
-      
+      <Nav></Nav>
       <div className='banner-box'>
         {mainBanner ? (
           <img
@@ -111,12 +111,12 @@ const Home = () => {
 
         <div className="home-menu">
         <div className="home-btn">
-          <img src="/boost.png" alt="" className="home-logo" />
+          <img src="/Frame-1.svg" alt="" className="home-logo" />
           <button className="home-btn">Boost Profile</button>
         </div>
 
         <div className="home-btn">
-          <img src="/banner.png" alt="" className="home-logo" />
+          <img src="/Frame.svg" alt="" className="home-logo" />
           <button className="home-btn">Add Banner</button>
         </div>
       </div>

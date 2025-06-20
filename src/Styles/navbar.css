@@ -51,6 +51,46 @@
     background-color: none;
 }
 
+
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+
+  top: 60px;
+ background: linear-gradient(to right, #FCBB12, #FAFF00);
+  border: 1px solid #4d3d04;
+  border-radius: 3px;
+  min-width: 150px;
+  z-index: 1000;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+
+.dropdown-menu p {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.logout-button {
+  width: 100%;
+  padding: 8px 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: none;
+}
+
 @media(max-width:800px){
 
 }
